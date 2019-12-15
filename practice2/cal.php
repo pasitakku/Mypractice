@@ -3,13 +3,13 @@
     $input2 = $_GET['input2'];
     $sign = $_GET['sign'];
     
-        if(($sign==1)&&!empty($input1)&&(!empty($input2))){
-            $result = $input1 + $input2 ;
-        }else if(($sign==2)&&!empty($input1)&&(!empty($input2))){
+        if($sign==1) {
+            $result = $input1 + $input2;
+        }else if($sign==2){
             $result = $input1 - $input2;
-        }else if(($sign==3)&&!empty($input1)&&(!empty($input2))){
+        }else if($sign==3){
             $result = $input1 * $input2;
-        }else if(($sign==4)&&!empty($input1)&&(!empty($input2))){
+        }else if($sign==4){
             $result = $input1 / $input2;
         }else{
             $result = "ERROR";

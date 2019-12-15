@@ -44,19 +44,19 @@
                         <input type="text" class="form-control" name="input1" placeholder="input1"
                             value="<?php echo($input1 ? $input1:'')?>">
                     </div>
-                    <select name="sign" class="custom-select">
-                        <option selected>เครื่องหมาย</option>
-                        <option value="1">บวก</option>
-                        <option value="2">ลบ</option>
-                        <option value="3">คูณ</option>
-                        <option value="4">หาร</option>
-                    </select>
-                    
-                        </button>
-                        <div class="form-group">
-                       
-                        </div>
-                    
+                    <div class="form-group">
+                        <select name="sign" class="custom-select">
+                            <option selected>เครื่องหมาย</option>
+                            <option value="1">บวก</option>
+                            <option value="2">ลบ</option>
+                            <option value="3">คูณ</option>
+                            <option value="4">หาร</option>
+                        </select>
+
+
+
+                    </div>
+
                     <div class="form-group">
                         <input type="text" class="form-control" name="input2" placeholder="input2"
                             value="<?php echo($input2 ? $input2:'')?>">
