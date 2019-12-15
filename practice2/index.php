@@ -15,21 +15,17 @@
 
 <body>
     <?php 
-    if(isset($_GET['result'])){
+    if (isset($_GET['result'])) {
         $result = $_GET['result'];
         $input1 = $_GET['input1'];
         $input2 = $_GET['input2'];
         $sign  = $_GET['sign'];
-       
-}else{
-    $result = "";
-    $input1 = "";
-    $input2 = "";
-    $sign = "";
-}
-
-
-
+    } else {
+        $result = "";
+        $input1 = "";
+        $input2 = "";
+        $sign = "";
+    }
     ?>
 
     <div class="container">
@@ -44,35 +40,35 @@
                         <input type="text" class="form-control" name="input1" placeholder="input1"
                             value="<?php echo($input1 ? $input1:'')?>">
                     </div>
-                    <select name="sign" class="custom-select">
-                        <option selected>เครื่องหมาย</option>
-                        <option value="1">บวก</option>
-                        <option value="2">ลบ</option>
-                        <option value="3">คูณ</option>
-                        <option value="4">หาร</option>
+                    <select class="custom-select" name="sign" required>
+                        <option value="">เครื่องหมาย</option>
+                        <option value="1" <?php echo($sign == '1' ? 'selected':''); ?>>บวก</option>
+                        <option value="2" <?php echo($sign == '2' ? 'selected':''); ?>>ลบ</option>
+                        <option value="3" <?php echo($sign == '3' ? 'selected':''); ?>>คูณ</option>
+                        <option value="4" <?php echo($sign == '4' ? 'selected':''); ?>>หาร</option>
                     </select>
-                    
-                        </button>
-                        <div class="form-group">
-                       
-                        </div>
-                    
+
+                    </button>
+                    <div class="form-group">
+
+                    </div>
+
                     <div class="form-group">
                         <input type="text" class="form-control" name="input2" placeholder="input2"
-                            value="<?php echo($input2 ? $input2:'')?>">
+                            value="<?php echo($input2 ? $input2:''); ?>">
                     </div>
                     <h1>
                         <div class="text-center">
-                            <?php 
-                            if(!empty($result)){
+                            <?php
+                            if (!empty($result)) {
                                 echo "Result is " .$result;
                             }
-                        ?>
+                            ?>
 
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary">Calculate </button>
+                                <button type="submit" class="btn btn-primary">Calculate</button>
 
-                                <button type="reset" class="btn btn-danger">Cancel </button>
+                                <button type="reset" class="btn btn-danger">Cancel</button>
                             </div>
                         </div>
                     </h1>
