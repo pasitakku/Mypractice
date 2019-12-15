@@ -48,8 +48,7 @@
                         <option value="3" <?php echo($sign == '3' ? 'selected':''); ?>>คูณ</option>
                         <option value="4" <?php echo($sign == '4' ? 'selected':''); ?>>หาร</option>
                     </select>
-
-                    </button>
+                    
                     <div class="form-group">
 
                     </div>
