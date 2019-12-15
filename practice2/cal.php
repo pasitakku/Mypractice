@@ -1,7 +1,7 @@
 <?php 
-    // $input1 = $_GET['input1'];
-    // $input2 = $_GET['input2'];
-    // $sign = $_GET['sign'];
+    $input1 = $_GET['input1'];
+    $input2 = $_GET['input2'];
+    $sign = $_GET['sign'];
     
         if(($sign==1)&&!empty($input1)&&(!empty($input2))){
             $result = $input1 + $input2 ;

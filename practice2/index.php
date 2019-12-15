@@ -20,7 +20,7 @@
         $input1 = $_GET['input1'];
         $input2 = $_GET['input2'];
         $sign  = $_GET['sign'];
-        
+       
 }else{
     $result = "";
     $input1 = "";
@@ -44,8 +44,8 @@
                         <input type="text" class="form-control" name="input1" placeholder="input1"
                             value="<?php echo($input1 ? $input1:'')?>">
                     </div>
-                    <select class="custom-select">
-                        <option selected="sign" value="">เครื่องหมาย</option>
+                    <select name="sign" class="custom-select">
+                        <option selected>เครื่องหมาย</option>
                         <option value="1">บวก</option>
                         <option value="2">ลบ</option>
                         <option value="3">คูณ</option>
