@@ -15,11 +15,12 @@
 
 <body>
     <?php 
-    if($_GET['result']){
+    if(isset($_GET['result'])){
         $result = $_GET['result'];
         $input1 = $_GET['input1'];
         $input2 = $_GET['input2'];
         $sign  = $_GET['sign'];
+        
 }else{
     $result = "";
     $input1 = "";
@@ -43,20 +44,19 @@
                         <input type="text" class="form-control" name="input1" placeholder="input1"
                             value="<?php echo($input1 ? $input1:'')?>">
                     </div>
-                    <div class="dropdown">
-                        <button class="btn btn-success btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" 
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-                            เครื่องหมาย
+                    <select class="custom-select">
+                        <option selected="sign" value="">เครื่องหมาย</option>
+                        <option value="1">บวก</option>
+                        <option value="2">ลบ</option>
+                        <option value="3">คูณ</option>
+                        <option value="4">หาร</option>
+                    </select>
+                    
                         </button>
                         <div class="form-group">
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" name="sign">
-                            <a class="dropdown-item" href="#" value="1">plus</a>
-                            <a class="dropdown-item" href="#" value="2">minus</a>
-                            <a class="dropdown-item" href="#" value="3">multiply</a>
-                            <a class="dropdown-item" href="#" value="4">divide</a>
+                       
                         </div>
-                        </div>
-                    </div>
+                    
                     <div class="form-group">
                         <input type="text" class="form-control" name="input2" placeholder="input2"
                             value="<?php echo($input2 ? $input2:'')?>">
