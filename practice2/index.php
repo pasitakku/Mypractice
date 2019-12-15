@@ -40,6 +40,7 @@
                         <input type="text" class="form-control" name="input1" placeholder="input1"
                             value="<?php echo($input1 ? $input1:'')?>">
                     </div>
+
                     <select class="custom-select" name="sign" required>
                         <option value="">เครื่องหมาย</option>
                         <option value="1" <?php echo($sign == '1' ? 'selected':''); ?>>บวก</option>
