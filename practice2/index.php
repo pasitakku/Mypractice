@@ -44,9 +44,19 @@
                     <select class="custom-select" name="sign" required>
                         <option value="">เครื่องหมาย</option>
                         <option value="1" <?php echo($sign == '1' ? 'selected':''); ?>>บวก</option>
-                        <option value="2" <?php echo($sign == '2' ? 'selected':''); ?>>ลบ</option>
-                        <option value="3" <?php echo($sign == '3' ? 'selected':''); ?>>คูณ</option>
-                        <option value="4" <?php echo($sign == '4' ? 'selected':''); ?>>หาร</option>
+                        <?php
+                        if ($sign == '1') {
+                            ?>
+                            <option value="1" <?php echo($sign == '1' ? 'selected':''); ?>>บวก</option>
+                            <?php
+                        } else {
+                            ?>
+                            <option value="2" <?php echo($sign == '2' ? 'selected':''); ?>>ลบ</option>
+                            <option value="3" <?php echo($sign == '3' ? 'selected':''); ?>>คูณ</option>
+                            <option value="4" <?php echo($sign == '4' ? 'selected':''); ?>>หาร</option>
+                            <?php
+                        }
+                        ?>
                     </select>
                     
                     <div class="form-group">
